@@ -1,43 +1,97 @@
 *{
-	outline: 1px solid gray; /* wireframe */
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
 body{
 	/* make the design the background image to use as a template */
-	background: url('svelte-test-5.png') no-repeat center top;
+	// background: url('svelte-test-5.png') no-repeat center top;
 	font-size: 18px;
-	font-family: sans-serif;
+	font-family: Verdana, Geneva, sans-serif;
+	background-color: #fbfbfb;
+	color: #9e9e9e;
+}
+input{
+	color: #9e9e9e;
+	font-size: inherit;
 }
 .container{
-	max-width: 1200px;
+	max-width: 762px;
 	margin: auto;
-	padding: 0 220px;
 }
 .filter-bar{
 	height: 8rem;
-	padding: 1.75rem 0;
+	padding: 1.55rem;
+	background-color: #ebebeb;
 }
 .filter-box{
-	padding: 0.75rem 1rem;
-	margin: 0 0 1rem;
+	border: 1px solid #e4d0d0;
+	background-color: white;
+	padding: 0.8rem 1rem 0.6rem;
+	margin: 0 0 0.45rem;
+	border-radius: 0.6rem;
 }
 .filter{
 	display: inline-block;
-	font-size: 2rem;
-	padding: 0.5rem;
+	// display: none;
+	font-size: 1.7rem;
+	padding: 0.4rem 0.8rem;
+	background-color: #fbfbfb;
+	border: 1px solid #cbcbcb;
+	border-radius: 0.6rem;
+}
+.filter input{
+	background-color: transparent;
+	border: 1px solid #969696;
+	border-radius: 0.3rem;
+	width: 3.8rem;
+	font-size: 1.4rem;
+	padding: 0.35rem;
+	position: relative;
+	top: -0.1rem;
 }
 .filter:after{
 	content: 'x';
 	cursor: pointer;
+	background-color: #d7d7d7;
+	border: 1px solid #969696;
+	border-radius: 50%;
+	display: inline-block;
+	height: 2.2rem;
+	width: 2.2rem;
+	text-align: center;
+	margin-left: 0.2rem;
+	margin-top: 0.3rem;
+}
+.main-input{
+	background-color: transparent;
+	font-size: 2.2rem;
+	border: none;
+	padding: 0.3rem 0 0.7rem;
+	font-weight: 300;
+}
+.filter-list{
+	border: 1px solid #e4d0d0;
+	border-radius: 0.6rem;
+	background-color: white;
+	font-size: 1.22rem;
 }
 .filter-list ul{
 	list-style-type: none;
+	border-bottom: 2px solid #d2d2d2;
 }
 .filter-list li{
-	padding: 1.4rem 1rem;
+	padding: 1.35rem 1.1rem;
+	border-bottom: 1px solid #ececec;
 }
 .filter-list li.selected{
 	display: none;
+}
+.filter-list li:last-child, .filter-list ul:last-child{
+	border: none;
+}
+.filter-list .desc{
+	font-style: italic;
+	padding-left: 1rem;
+	font-size: 1rem;
 }

@@ -11,43 +11,43 @@
 	<div class="filter-bar">
 		<div class="container">
 			<div class="filter-box">
-				<div class="filter">
-					<span>booking_id</span>
-					<input type="number" value="12" size="2">
+				<div>
+					<div class="filters"></div>
+					<span class="main-input" contenteditable="true"></span>
 				</div>
-				<input class="main-input" type="text" value="book">
+				<!-- <input class="main-input" type="text"> -->
 			</div>
 			<div class="filter-list">
 				<ul class="booking-filters">
-					<li class="selected">
+					<li data-code="booking_id">
 						<span class="code">booking_id</span>
 						<span class="desc">Filter using the ID of a Booking</span>
 					</li>
-					<li>
+					<li data-code="booking_status">
 						<span class="code">booking_status</span>
 						<span class="desc">Filter using the STATUS of a Booking</span>
 					</li>
-					<li>
+					<li data-code="pickup_address">
 						<span class="code">pickup_address</span>
 						<span class="desc">Filter using the PICKUP ADDRESS of a Booking</span>
 					</li>
-					<li>
+					<li data-code="dropoff_address">
 						<span class="code">dropoff_address</span>
 						<span class="desc">Filter using the DROPOFF ADDRESS of a Booking</span>
 					</li>
 				</ul>
 				<ul class="passanger-filters">
-					<li>
+					<li data-code="passenger_name">
 						<span class="code">passenger_name</span>
 						<span class="desc">Filter using the Name of a Passenger</span>
 					</li>
-					<li>
+					<li data-code="passenger_surname">
 						<span class="code">passenger_surname</span>
 						<span class="desc">Filter using the Surname of a Passenger</span>
 					</li>
 				</ul>
 				<ul class="driver-filters">
-					<li>
+					<li data-code="driver_ref_no">
 						<span class="code">driver_ref_no</span>
 						<span class="desc">Filter using the Ref No of a Driver</span>
 					</li>
@@ -55,6 +55,7 @@
 			</div>
 		</div>
 	</div>
+	<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
 	<script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>

@@ -1,0 +1,43 @@
+*{
+	outline: 1px solid gray; /* wireframe */
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	/* make the design the background image to use as a template */
+	background: url('svelte-test-5.png') no-repeat center top;
+	font-size: 18px;
+	font-family: sans-serif;
+}
+.container{
+	max-width: 1200px;
+	margin: auto;
+	padding: 0 220px;
+}
+.filter-bar{
+	height: 8rem;
+	padding: 1.75rem 0;
+}
+.filter-box{
+	padding: 0.75rem 1rem;
+	margin: 0 0 1rem;
+}
+.filter{
+	display: inline-block;
+	font-size: 2rem;
+	padding: 0.5rem;
+}
+.filter:after{
+	content: 'x';
+	cursor: pointer;
+}
+.filter-list ul{
+	list-style-type: none;
+}
+.filter-list li{
+	padding: 1.4rem 1rem;
+}
+.filter-list li.selected{
+	display: none;
+}

@@ -10,7 +10,7 @@ $(function(){
 
 	function addFilter(element) {
 		var code = element.attr('data-code');
-		var filterElement="<div class='filter' data-code='"+ code +"'><span>" + code + "</span> <input type='text'><span class='close'>x</span></div>";
+		var filterElement="<div class='filter' data-code='"+ code +"'><span>" + code + "</span> <input type='text'> <span class='close'>x</span></div>";
 		$('.filter-box .filters').append(filterElement);
 		element.addClass('selected');
 		filterActive = true;
@@ -65,10 +65,8 @@ $(function(){
 
 	$(document).click(function(e){
 		var target = $(e.target);
-		if(target.parents('.filter-list').length  === 0 
-			&& target.parents('.filter-box').length === 0
-			&& target !== $('.filter-list')
-			&& target !== $('.filter-box')
+		if(target.parents('.container').length  === 0 
+			&& target !== $('.container')
 			){
 			closeFilterList();
 			$('.main-input').blur();
